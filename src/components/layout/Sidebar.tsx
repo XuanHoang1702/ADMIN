@@ -20,7 +20,6 @@ const Sidebar: React.FC = () => {
             isOpen ? 'w-64' : 'w-16'
         }`}
         >
-        {/* Header của Sidebar */}
         <div className="p-4 flex items-center justify-between border-b border-gray-700">
             <h2 className={`text-xl font-bold ${isOpen ? 'block' : 'hidden'}`}>Fashion Admin</h2>
             <button
@@ -31,7 +30,6 @@ const Sidebar: React.FC = () => {
             </button>
         </div>
 
-        {/* Menu */}
         <nav className="mt-4">
             {menuItems.map((item) => (
             <Link

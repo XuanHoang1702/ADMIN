@@ -1,15 +1,12 @@
 import { ChartOptions } from 'chart.js';
 import React from 'react';
 import Notifications from '../../components/home/Notifications';
-import QuickLinks from '../../components/home/QuickLinks';
 import RecentOrders from '../../components/home/RecentOrders';
 import RevenueChart from '../../components/home/RevenueChart';
 import StatsOverview from '../../components/home/StatsOverview';
 import Tasks from '../../components/home/Tasks';
 import TopProducts from '../../components/home/TopProducts';
 import UserMessages from '../../components/home/UserMessages';
-import Header from '../../components/layout/Header';
-import Sidebar from '../../components/layout/Sidebar';
 
 const Home: React.FC = () => {
 
@@ -63,9 +60,6 @@ const Home: React.FC = () => {
 
     return (
         <div className="flex min-h-screen bg-gray-100">
-            <Sidebar />
-            <div className="flex-1 p-6 ml-64 mt-28">
-                <Header />
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {/* Cột chính */}
                     <div className="lg:col-span-2">
@@ -81,8 +75,7 @@ const Home: React.FC = () => {
                         <UserMessages />
                     </div>
                 </div>
-                <QuickLinks />
-            </div>
+            
         </div>
     );
 };

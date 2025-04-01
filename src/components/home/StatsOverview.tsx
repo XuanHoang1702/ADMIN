@@ -22,7 +22,7 @@ const StatsOverview: React.FC<StatsOverviewProps> = ({ stats }) => {
                 <p className="text-2xl font-semibold text-indigo-600">{stats.revenue}</p>
             </Card>
             <Card
-                title="Total Orders"
+                title="Total Order"
                 className="shadow-md bg-gray-50 border border-gray-200 rounded-lg"
             >
                 <p className="text-2xl font-semibold text-indigo-600">{stats.orders}</p>
